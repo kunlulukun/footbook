@@ -1,21 +1,18 @@
-# frontend
+# Frontend
+This is the frontend code of the app.
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Project Setup
 
+if you don't have node environment
+
+```sh
+brew install nvm
+
+nvm use lts/iron 
+
+```
+### Install dependencies
 ```sh
 npm install
 ```
@@ -37,3 +34,21 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+## Run with nginx in docker
+
+### Option 1. use dockerfile to build a image
+
+```sh
+docker build -t frontend .
+
+docker run -p 3000:80 frontend
+```
+
+You can access to the webpage on localhost:3000
+
+
+### Option 2. docker compose up
+
+TBD
