@@ -51,4 +51,7 @@ You can access to the webpage on localhost:3000
 
 ### Option 2. docker compose up
 
-TBD
+```sh
+# Run the following under /footbook
+docker compose up frontend
+```
