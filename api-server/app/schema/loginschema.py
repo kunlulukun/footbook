@@ -13,6 +13,7 @@ class LoginResponseSchema(BaseModel):
 
 class SigninRequestSchema(BaseModel):
     e_mail: str
+    display_name:str
     password: str
 
 
