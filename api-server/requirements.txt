@@ -4,4 +4,5 @@ motor
 pymysql
 dbutils
 uvicorn
+PyYAML
 pytest
