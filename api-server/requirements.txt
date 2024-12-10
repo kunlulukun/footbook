@@ -1,6 +1,8 @@
 fastapi~=0.115.5
 pydantic~=2.10.2
 motor
+pymysql
+dbutils
 uvicorn
 PyYAML
 pytest

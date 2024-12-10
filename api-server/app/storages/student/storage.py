@@ -2,8 +2,11 @@ from typing import Optional
 
 from bson import ObjectId
 
+from app.config import mongo_client
 from app.storages.student.models import StudentModel
-from app.storages.student.mongo_config import students_collection
+
+db = mongo_client["school"]
+students_collection = db["students"]
 
 
 async def create_student(student: StudentModel) -> Optional[StudentModel]:
